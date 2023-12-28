@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --main-color: #2a44a0;
+  --black-color: #0e0e0e;
+  --white-color: #ffffff;
+  --main-box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
+
+
+}
+
+/*! base html codes  */
+html {
+  font-size: 62.5%;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--main-color);
+
+}
+
+body {
+
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.header {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 10rem;
+    box-shadow: var(--main-box-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 10rem;
+  }
+
+.header .logo{
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+    font-weight: bold;
+    letter-spacing: 1rem;
+}
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 3rem;
+    color: var(--main-color);
+    border-bottom: 0.1rem solid transparent;
+  }
+  
+  .header .navbar .active,
+  .header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+  }
+  .footer {
+    background-color: var(--white-color);
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 10rem;
+    box-shadow: var(--main-box-shadow);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    padding: 1rem 1rem;
+    color: var(--black-color);
+    border: none;
+    cursor: pointer;
+  
+    font-size: 2rem;
+    border-bottom: 0.1rem solid transparent;
+
+}
+
+.bilgi {
+    padding: 0.8rem;
+    color: var(--main-color);
+    border: none;
+    cursor: pointer;
+    margin: 0.1rem;
+    font-size: 1.5rem;
+    border-bottom: 0.1rem solid transparent;
+}
