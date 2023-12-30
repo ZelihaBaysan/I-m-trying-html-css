@@ -6,6 +6,7 @@
   --main-color: #2a44a0;
   --black-color: #0e0e0e;
   --white-color: #ffffff;
+  --main-basma-color: #d4d4d5;
 }
 
 * {
@@ -23,10 +24,21 @@
 /* Temel HTML stilleri */
 html {
   font-size: 62.5%;
-  scroll-padding-top: 9rem;
-  scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: var(--main-color);
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: white;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--black-color);
 }
 
 body {
@@ -39,22 +51,52 @@ section {
 
 .container {
   background-color: var(--white-color);
-  box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -webkit-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  padding: 0.8rem;
+  box-shadow: 0px 0px 65px 3px rgba(0, 0, 0, 1);
+  padding: 1rem;
   color: var(--white-color);
   border: none;
-  margin: 10rem 0rem 10rem 0rem;
+  margin: 10rem 0rem; 
   font-size: 1.5rem;
   border-bottom: 0.1rem solid transparent;
   align-items: center;
+  column-count: 3;
+  column-gap: 2rem; 
 }
 
+.container .acilan-pencere {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
 
+.container .acilan-pencere button {
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  width: 100%; 
+}
 
+.container .acilan-pencere button:hover {
+  opacity: 0.8;
+}
 
+.container .acilan-pencere button:focus + nav {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 200ms, visibility 200ms;
+}
 
+.container .acilan-pencere nav {
+  border: 0.3rem solid var(--main-color);
+  background-color: var(--main-basma-color);
+  padding: 2rem;
+  color: var(--black-color);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms, visibility 200ms;
+}
 
 /* Header stilleri */
 .header {
@@ -65,9 +107,7 @@ section {
   padding: 0 7%;
   margin: 2rem 7%;
   border-radius: 10rem;
-  box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -webkit-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
+  box-shadow: 0px 0px 65px 3px rgba(0, 0, 0, 1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -106,10 +146,8 @@ section {
   padding: 0 7%;
   margin: 2rem 7%;
   border-radius: 10rem;
-  box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -webkit-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 65px 3px rgba(0,0,0,1);
-  column-gap: 10rem;
+  box-shadow: 0px 0px 65px 3px rgba(0, 0, 0, 1);
+  column-gap: 2rem; 
 }
 
 .links {
@@ -118,7 +156,7 @@ section {
 }
 
 .links a {
-  padding: 1rem 1rem;
+  padding: 1rem 0;
   color: var(--black-color);
   border: none;
   cursor: pointer;
