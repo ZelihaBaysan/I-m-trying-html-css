@@ -43,7 +43,6 @@ html::-webkit-scrollbar-thumb {
 
 body {
 }
-
 /* Container stilleri */
 section {
   padding: 3.5rem 7%;
@@ -61,12 +60,14 @@ section {
   align-items: center;
   column-count: 3;
   column-gap: 2rem; 
+  
 }
 
 .container .acilan-pencere {
   display: inline-block;
   align-items: center;
   justify-content: center;
+ 
 }
 
 .container .acilan-pencere button {
@@ -86,6 +87,7 @@ section {
   opacity: 1;
   visibility: visible;
   transition: opacity 200ms, visibility 200ms;
+ 
 }
 
 .container .acilan-pencere nav {
@@ -97,6 +99,15 @@ section {
   visibility: hidden;
   transition: opacity 200ms, visibility 200ms;
 }
+.acilan-pencere nav a .cozum-btn {
+  border-radius: 10rem;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* Header stilleri */
 .header {
