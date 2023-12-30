@@ -82,7 +82,7 @@ section {
   opacity: 0.8;
 }
 
-.container .acilan-pencere button:focus + nav {
+.container .acilan-pencere:focus-within nav {
   opacity: 1;
   visibility: visible;
   transition: opacity 200ms, visibility 200ms;
