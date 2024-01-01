@@ -68,6 +68,7 @@ section {
   display: inline-block;
   align-items: center;
   justify-content: center;
+
  
 }
 
@@ -78,6 +79,7 @@ section {
   font-weight: bold;
   color: white;
   width: 100%; 
+
 }
 
 .container .acilan-pencere button:hover {
@@ -99,6 +101,7 @@ section {
   opacity: 0;
   visibility: hidden;
   transition: opacity 200ms, visibility 200ms;
+  
 }
 .acilan-pencere nav a .cozum-btn {
   border-radius: 10rem;
