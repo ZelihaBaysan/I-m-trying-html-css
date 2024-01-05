@@ -55,7 +55,7 @@ section {
   padding: 1rem;
   color: var(--white-color);
   border: none;
-  margin: 10rem 0rem; 
+  margin: 5rem 5rem; 
   font-size: 1.5rem;
   border-bottom: 0.1rem solid transparent;
   align-items: center;
@@ -80,6 +80,7 @@ section {
   font-weight: bold;
   color: white;
   width: 100%; 
+  margin-bottom: 1rem;
 
 }
 
@@ -90,7 +91,7 @@ section {
 .container .acilan-pencere:focus-within nav {
   opacity: 1;
   visibility: visible;
-  transition: opacity 200ms, visibility 200ms;
+  transition: all .7s cubic-bezier(.25, .4, .45, 1.4);
  
 }
 
@@ -104,13 +105,17 @@ section {
   transition: opacity 200ms, visibility 200ms;
   
 }
+
+
+
 .acilan-pencere nav a .cozum-btn {
-  border-radius: 10rem;
-  width: 50%;
+  width: 10rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
+
+
 
 
 
@@ -127,7 +132,7 @@ section {
   position: sticky;
   top: 0;
   z-index: 1000;
-  height: 10rem;
+  height: 7rem;
 }
 
 .header .logo {
@@ -164,6 +169,7 @@ section {
   border-radius: 10rem;
   box-shadow: 0px 0px 65px 3px rgba(0, 0, 0, 1);
   column-gap: 2rem; 
+  height: 7rem;
 }
 
 .links {
@@ -172,12 +178,16 @@ section {
 }
 
 .links a {
-  padding: 1rem 0;
+
   color: var(--black-color);
   border: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   border-bottom: 0.1rem solid transparent;
+}
+.links a:hover{
+  opacity: 50%;
 }
 
 .bilgi {
