@@ -55,13 +55,12 @@ section {
   padding: 1rem;
   color: var(--white-color);
   border: none;
-  margin: 5rem 5rem; 
+  margin: 5rem 5rem;
   font-size: 1.5rem;
   border-bottom: 0.1rem solid transparent;
   align-items: center;
   column-count: 3;
-  column-gap: 2rem; 
-  
+  column-gap: 2rem;
 }
 
 .container .acilan-pencere {
@@ -69,8 +68,6 @@ section {
   align-items: center;
   justify-content: center;
   margin: 1rem;
-
- 
 }
 
 .container .acilan-pencere button {
@@ -79,9 +76,8 @@ section {
   padding: 1rem;
   font-weight: bold;
   color: white;
-  width: 100%; 
+  width: 100%;
   margin-bottom: 1rem;
-
 }
 
 .container .acilan-pencere button:hover {
@@ -91,8 +87,7 @@ section {
 .container .acilan-pencere:focus-within nav {
   opacity: 1;
   visibility: visible;
-  transition: all .7s cubic-bezier(.25, .4, .45, 1.4);
- 
+  transition: all 0.7s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
 
 .container .acilan-pencere nav {
@@ -103,10 +98,7 @@ section {
   opacity: 0;
   visibility: hidden;
   transition: opacity 200ms, visibility 200ms;
-  
 }
-
-
 
 .acilan-pencere nav a .cozum-btn {
   width: 10rem;
@@ -114,10 +106,6 @@ section {
   justify-content: center;
   text-align: center;
 }
-
-
-
-
 
 /* Header stilleri */
 .header {
@@ -168,7 +156,7 @@ section {
   margin: 2rem 7%;
   border-radius: 10rem;
   box-shadow: 0px 0px 65px 3px rgba(0, 0, 0, 1);
-  column-gap: 2rem; 
+  column-gap: 2rem;
   height: 7rem;
 }
 
@@ -178,7 +166,6 @@ section {
 }
 
 .links a {
-
   color: var(--black-color);
   border: none;
   cursor: pointer;
@@ -186,7 +173,7 @@ section {
   font-weight: bold;
   border-bottom: 0.1rem solid transparent;
 }
-.links a:hover{
+.links a:hover {
   opacity: 50%;
 }
 
