@@ -100,13 +100,6 @@ section {
   transition: opacity 200ms, visibility 200ms;
 }
 
-.acilan-pencere nav a .cozum-btn {
-  width: 10rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 /* Header stilleri */
 .header {
   background-color: var(--white-color);
